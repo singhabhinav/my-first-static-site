@@ -4,4 +4,4 @@ EXPOSE 80
 
 WORKDIR '/app'
 
-COPY index.html /usr/share/nginx/html/
+COPY . /usr/share/nginx/html/
