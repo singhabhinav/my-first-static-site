@@ -11,7 +11,7 @@ deploy:
       env: "Prod-env" # Copy it from Elastic Beanstalk dashboard
       access_key_id: $AWS_ACCESS_KEY
       secret_access_key: $AWS_SECRET_KEY
-      bucket_name: "first-static-site-to-be-deleted" # Elastic Beanstalk will take code from S3 bucket and deploy it in container. Take it from AWS S3 
+      bucket_name: "abhinav-tbd" # Elastic Beanstalk will take code from S3 bucket and deploy it in container. Take it from AWS S3 
       bucket_path: "docker" # Folder where Travis CI will upload the code in zip file in this folder. Take it from AWS S3
       on:
           branch: master # Deploy only when there are changes on master branch
@@ -21,7 +21,7 @@ deploy:
       env: "Testing-env" # Copy it from Elastic Beanstalk dashboard
       access_key_id: $AWS_ACCESS_KEY
       secret_access_key: $AWS_SECRET_KEY
-      bucket_name: "first-static-site-to-be-deleted" # Elastic Beanstalk will take code from S3 bucket and deploy it in container. Take it from AWS S3 
+      bucket_name: "abhinav-tbd" # Elastic Beanstalk will take code from S3 bucket and deploy it in container. Take it from AWS S3 
       bucket_path: "docker" # Folder where Travis CI will upload the code in zip file in this folder. Take it from AWS S3
       on:
           branch: testing # Deploy only when there are changes on testing branch
