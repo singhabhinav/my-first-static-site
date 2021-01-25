@@ -6,7 +6,7 @@ services:
 # Tell Travis how to deploy code to AWS
 deploy:
     - provider: elasticbeanstalk # We will deploy code to Elastic Beanstalk
-        region: us-west-2 # Specify your region
+        region: us-east-1 # Specify your region
         app: "prod" # Copy it from Elastic Beanstalk dashboard
         env: "Prod-env" # Copy it from Elastic Beanstalk dashboard
         access_key_id: $AWS_ACCESS_KEY
@@ -16,7 +16,7 @@ deploy:
         on:
             branch: master # Deploy only when there are changes on master branch
     - provider: elasticbeanstalk # We will deploy code to Elastic Beanstalk
-        region: us-west-2 # Specify your region
+        region: us-east-1 # Specify your region
         app: "testing" # Copy it from Elastic Beanstalk dashboard
         env: "Testing-env" # Copy it from Elastic Beanstalk dashboard
         access_key_id: $AWS_ACCESS_KEY
